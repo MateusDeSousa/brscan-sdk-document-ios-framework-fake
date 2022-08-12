@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'brscan_sdk_documento_ios_fake_Example' do
+  pod 'brscan_sdk_documento_ios_fake', :path => '../'
+
+  target 'brscan_sdk_documento_ios_fake_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
