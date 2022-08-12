@@ -1,0 +1,19 @@
+platform :ios, '11.0'
+inhibit_all_warnings!
+
+target 'brscan_sdk_documento_ios_fake' do
+    project 'brscan_sdk_documento_ios_fake.project'
+    use_frameworks!
+
+    pod 'GoogleMLKit/ObjectDetection', '2.6.0'
+end
+
+target 'brscan_sdk_test' do
+    project 'brscan_sdk_test/brscan_sdk_test.project'
+end
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
+end

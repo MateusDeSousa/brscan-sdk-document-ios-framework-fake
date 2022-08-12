@@ -1,0 +1,33 @@
+name: brscan_sdk_documento_ios_fake
+
+options:
+  xcodeVersion: '9999'
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  brscan_sdk_documento_ios_fake:
+    type: framework
+    platform: iOS      
+
+    settings:
+      IPHONEOS_DEPLOYMENT_TARGET: 11.0
+      BUILD_LIBRARY_FOR_DISTRIBUTION: yes
+      ENABLE_BITCODE: yes
+
+    info:
+      path: brscan_sdk_documento_ios_fake/info.plist
+      properties:
+        CFBundleIdentifier: com.brscan.barscanfake
+
+    sources:
+      - path: brscan_sdk_documento_ios_fake/Sources
+
+schemes:
+  brscan_sdk_documento_ios_fake:
+    build:
+      targets:
+       brscan_sdk_documento_ios_fake: all
+

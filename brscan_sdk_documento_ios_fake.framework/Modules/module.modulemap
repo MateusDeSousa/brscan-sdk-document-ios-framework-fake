@@ -1,0 +1,11 @@
+framework module brscan_sdk_documento_ios_fake {
+  umbrella header "brscan_sdk_documento_ios_fake.h"
+
+  export *
+  module * { export * }
+}
+
+module brscan_sdk_documento_ios_fake.Swift {
+    header "brscan_sdk_documento_ios_fake-Swift.h"
+    requires objc
+}
