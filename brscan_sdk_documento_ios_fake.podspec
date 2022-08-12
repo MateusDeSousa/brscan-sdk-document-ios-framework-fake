@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license           = 'MIT'
 
   s.platform          = :ios
-  s.source            = { :git => 'https://github.com/MateusDeSousa/brscan-sdk-document-ios-framework-fake.git', :tag => s.version.to_s }
+  s.source            = { :git => 'https://github.com/MateusDeSousa/brscan-sdk-document-ios-framework-fake.git' }
 
   s.ios.deployment_target = '11.0'
   s.ios.vendored_frameworks = 'brscan_sdk_documento_ios_fake.framework'
