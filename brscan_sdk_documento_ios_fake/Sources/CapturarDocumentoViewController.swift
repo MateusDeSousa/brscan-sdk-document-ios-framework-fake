@@ -3,7 +3,7 @@ import MLKitObjectDetection
 import MLKitVision
 
 public class CapturarDocumentoViewController: UIViewController {
-    weak var delegate: CapturarDocumentoViewControllerDelegate?
+    public weak var delegate: CapturarDocumentoViewControllerDelegate?
     
     public init(
         chave: String,

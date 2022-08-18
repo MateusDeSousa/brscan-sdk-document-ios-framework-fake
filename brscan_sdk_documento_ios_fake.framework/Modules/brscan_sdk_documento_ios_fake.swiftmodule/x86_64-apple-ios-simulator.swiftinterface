@@ -9,6 +9,7 @@ import UIKit
 import _Concurrency
 @_exported import brscan_sdk_documento_ios_fake
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturarDocumentoViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: brscan_sdk_documento_ios_fake.CapturarDocumentoViewControllerDelegate?
   @_Concurrency.MainActor(unsafe) public init(chave: Swift.String, cropDocumento: Swift.Bool, validaDocumento: Swift.Bool, wizard: Swift.Bool, aceitaAB: Swift.Bool, tiposDocumentosAceitos: [Swift.String], segurancaExtra: Swift.Bool, segurancaExtraSslPinning: Swift.Bool, segurancaExtraRootCheck: Swift.Bool, timeoutCapturaManual: Swift.Int, telaSelecaoDocumento: Swift.Bool, resolucao: Swift.String, dicaSlide: Swift.Bool, ladoDocumentoAceito: Swift.String, tipoRetorno: Swift.String, telaPreview: Swift.Bool, scoreMinimo: Swift.Int, customizacaoTexto: brscan_sdk_documento_ios_fake.ConfiguracaoTextoDocumento, retornarErros: Swift.Bool, verificarLuminosidade: Swift.Bool, tempoDelayMensagem: Swift.Int, acessibilidade: Swift.Bool, segurancaExtraEmulatorCheck: Swift.Bool, tokenTentativa: Swift.Int, orientacaoCaptura: Swift.String)
   @objc deinit
 }
