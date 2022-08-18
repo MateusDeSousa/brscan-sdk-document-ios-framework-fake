@@ -13,11 +13,17 @@ import _Concurrency
   @objc deinit
 }
 public protocol CapturarDocumentoViewControllerDelegate : AnyObject {
-  func documentCallbackListener()
+  func documentCallbackListener(_ documentCallback: [Swift.String : Any])
   func sucesso(_ documento: [[Swift.String : Any]])
   func erro(_ erro: [Swift.String : Any])
 }
 public class ConfiguracaoTextoDocumento {
+  public var brscan_documento_loading: Swift.String
+  public var brscan_documento_captura_estado_centralize_documento: Swift.String
+  public var brscan_documento_captura_estado_aproxime_documento: Swift.String
+  public var brscan_documento_captura_estado_afaste_documento: Swift.String
+  public var brscan_documento_captura_estado_aguarde: Swift.String
+  public var brscan_documento_captura_estado_encaixe_documento: Swift.String
   public init()
   @objc deinit
 }
